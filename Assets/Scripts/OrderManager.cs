@@ -30,6 +30,9 @@ public class OrderManager : MonoBehaviour
     private BouquetRecipeData lastOrderedRecipe;
     private CustomerData lastCustomer;
 
+    public bool isStoreOpen = true;
+    public int correctOrdersCount { get ; private set; } = 0;
+
     private void Awake()
     {
         if (Instance == null) Instance = this;
@@ -45,7 +48,7 @@ public class OrderManager : MonoBehaviour
 
     void SpawnCustomer() //mengacak RESEP BUKET BUNGA
     {
-        if (availableMenu.Count == 0 || customerDatabase.Count == 0) return;
+        if (!isStoreOpen || availableMenu.Count == 0 || customerDatabase.Count == 0) return;
 
         int recipeAttempts = 0;
         do
@@ -118,6 +121,7 @@ public class OrderManager : MonoBehaviour
 
         if (submittedRecipe == currentOrder)
         {
+            correctOrdersCount++;
             orderText.text = ParseDialogue(currentCustomer.correctDialogue, currentOrder);
             customerImage.sprite = currentCustomer.HappySprite;
             speechBubble.SetActive(true);

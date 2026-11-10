@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CustomerData
   customerId: nicole
   customerName: Nicole
-  normalSprite: {fileID: -8442353597118480420, guid: 12f06c22dbd592f40903043f37274bda, type: 3}
-  happySprite: {fileID: 3699702756827221260, guid: 08fcd770107b792439c43edc735cc1c8, type: 3}
-  sadSprite: {fileID: -3681336573592385245, guid: 8ddfad170051b074d84c19950dba7e65, type: 3}
+  normalSprite: {fileID: 21300000, guid: 12f06c22dbd592f40903043f37274bda, type: 3}
+  happySprite: {fileID: 21300000, guid: 08fcd770107b792439c43edc735cc1c8, type: 3}
+  sadSprite: {fileID: 21300000, guid: 8ddfad170051b074d84c19950dba7e65, type: 3}
   orderDialogue: "Got any [Flowername]? Wrap \u2019em in [Papercolor]."
   correctDialogue: Heh. I appreciate it.
   wrongDialogue: Nah. Wrong bouquet.

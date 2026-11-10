@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CustomerData
   customerId: jason
   customerName: Jason
-  normalSprite: {fileID: 7589083582081206176, guid: 974bbdb2a4ddf99488e8b40c7635ef6d, type: 3}
-  happySprite: {fileID: -4617461191153529193, guid: be2b1dd4f3ec62f46aa54f2b65a670d4, type: 3}
-  sadSprite: {fileID: 7024854782280793730, guid: 7d07a6b01a0d05c44b9ba48545d176ee, type: 3}
+  normalSprite: {fileID: 21300000, guid: 974bbdb2a4ddf99488e8b40c7635ef6d, type: 3}
+  happySprite: {fileID: 21300000, guid: be2b1dd4f3ec62f46aa54f2b65a670d4, type: 3}
+  sadSprite: {fileID: 21300000, guid: 7d07a6b01a0d05c44b9ba48545d176ee, type: 3}
   orderDialogue: I want a bouquet full of [Flowername], wrapped with [Papercolor]
     papers for my wife, please? Make sure you make it beautifully.
   correctDialogue: "It\u2019s perfect. Thanks! Hahaha!"
